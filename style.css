@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "lazy dog";
+  src: url("./font/lazy_dog.ttf");
+}
+
+
+body {
+    font-family: 'lazy Dog', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+
+  #startPage{
+    background-color: #fcf6c6;
+  }
+  
+  #startPage, #gamePage, #endPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  #startPage{
+    margin: 20px 200px;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  #endPage{
+    margin: 20px 200px;
+    text-align: center;
+  }
+  
+  #gamePage {
+    background-color: #f0e478;
+    margin: 20px 200px;
+  }
+  
+  #count {
+    font-size: 30px;
+    margin-bottom: 20px;
+
+  }
+  
+  #clickBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    background-image: url("./img/ฉาก.PNG");
+    background-size: 40% auto;
+    background-position: 160px;
+    background-repeat:no-repeat;
+
+
+  }
+  
+  #clickBtn:hover {
+    background-color: #3e8e41;
+  }
+  
+  #backBtn{
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+    left: 46%;
+  }
+
+ #playAgainBtn ,#Share{
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+
+  }
+
+  #startBtn{
+    border: 0px;
+    background: none;
+    cursor: pointer;
+    position: relative;
+
+  }
+  
+  #backBtn:hover, #playAgainBtn:hover {
+    background-color: #e53935;
+  }
+  
+  #timerBar {
+    width: 300px;
+    height: 20px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+
+  }
+  
+  #timerBarFill {
+    height: 100%;
+    background-color: #4CAF50;
+  }
+  
+  #endPage {
+    padding-top: 30px;
+    background-color: #f5f5f5;
+  }
+
+  #endPage p{
+    text-align: center;
+  }
+  
+  #finalScore {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    #count {
+      font-size: 60px;
+    }
+  
+    #clickBtn, #backBtn, #playAgainBtn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    #timerBar {
+      width: 200px;
+    }
+  }
+
+  .score img, .score p {
+    display: inline-block;
+  }
+
+  .timer img, .timer .timerBar {
+    display: inline-block;
+  }
