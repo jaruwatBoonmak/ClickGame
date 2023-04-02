@@ -74,12 +74,12 @@ function stopGame() {
 	var imgHTML = ''
 
 	if(score<=50){
-		imgHTML = '<img src="./img/หน้าสรุป1.png" width="300" height="auto">';
+		imgHTML = '<img src="./img/หน้าสรุป1.PNG" width="300" height="auto">';
 
 	}else if(score>50 && score<150){
-		imgHTML = '<img src="./img/หน้าสรุป3.png" width="300" height="auto">';
+		imgHTML = '<img src="./img/หน้าสรุป3.PNG" width="300" height="auto">';
 	}else{
-		imgHTML = '<img src="./img/หน้าสรุป2.png" width="300" height="auto">';
+		imgHTML = '<img src="./img/หน้าสรุป2.PNG" width="300" height="auto">';
 	}
 
 	var container = document.getElementById("imageContainer");
